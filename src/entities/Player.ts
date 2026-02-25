@@ -75,24 +75,31 @@ export class Player extends Actor {
 
     this.isMoving = true;
 
-    // One-way ledge hop: jump over the ledge tile and land below it
+    // One-way ledge hop: jump over the ledge tile and land on the other side
     const landingTile = tileMap.getTile(targetCol, targetRow);
-    if (landingTile === TileType.LEDGE_JUMP && direction === Direction.DOWN) {
-      const hopRow = targetRow + 1;
-      const finalRow = tileMap.isWalkable(targetCol, hopRow) ? hopRow : targetRow;
+    const ledgeHop = this.getLedgeHop(landingTile, direction);
+    if (ledgeHop) {
+      const hopCol = targetCol + ledgeHop.dc;
+      const hopRow = targetRow + ledgeHop.dr;
+      const finalCol = tileMap.isWalkable(hopCol, hopRow) ? hopCol : targetCol;
+      const finalRow = tileMap.isWalkable(hopCol, hopRow) ? hopRow : targetRow;
 
-      this.gridPos.x = targetCol;
+      this.gridPos.x = finalCol;
       this.gridPos.y = finalRow;
 
       const midX = targetCol * TILE_SIZE + TILE_SIZE / 2;
       const midY = targetRow * TILE_SIZE + TILE_SIZE / 2;
-      const finalX = targetCol * TILE_SIZE + TILE_SIZE / 2;
+      const finalX = finalCol * TILE_SIZE + TILE_SIZE / 2;
       const finalY = finalRow * TILE_SIZE + TILE_SIZE / 2;
+
+      // Arc offset: lift sprite perpendicular to movement direction
+      const arcX = ledgeHop.arcX ?? 0;
+      const arcY = ledgeHop.arcY ?? 0;
 
       this.scene.tweens.add({
         targets: this.sprite,
-        x: midX,
-        y: midY - 8,
+        x: midX + arcX,
+        y: midY + arcY,
         duration: PLAYER_MOVE_DURATION * 0.6,
         ease: 'Quad.easeOut',
         onComplete: () => {
@@ -129,5 +136,25 @@ export class Player extends Actor {
         this.onMoveComplete?.(this.gridPos.x, this.gridPos.y);
       },
     });
+  }
+
+  /** Returns hop delta and arc offset if the tile is a directional ledge, or null. */
+  private getLedgeHop(
+    tile: TileType,
+    dir: Direction,
+  ): { dc: number; dr: number; arcX?: number; arcY?: number } | null {
+    if (tile === TileType.LEDGE_JUMP && dir === Direction.DOWN) {
+      return { dc: 0, dr: 1, arcY: -8 };
+    }
+    if (tile === TileType.LEDGE_JUMP_NORTH && dir === Direction.UP) {
+      return { dc: 0, dr: -1, arcY: 8 };
+    }
+    if (tile === TileType.LEDGE_JUMP_WEST && dir === Direction.LEFT) {
+      return { dc: -1, dr: 0, arcX: 8 };
+    }
+    if (tile === TileType.LEDGE_JUMP_EAST && dir === Direction.RIGHT) {
+      return { dc: 1, dr: 0, arcX: -8 };
+    }
+    return null;
   }
 }

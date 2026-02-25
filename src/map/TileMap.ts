@@ -32,6 +32,15 @@ export class TileMap {
     if (tile === TileType.LEDGE_JUMP) {
       return direction === Direction.DOWN;
     }
+    if (tile === TileType.LEDGE_JUMP_NORTH) {
+      return direction === Direction.UP;
+    }
+    if (tile === TileType.LEDGE_JUMP_WEST) {
+      return direction === Direction.LEFT;
+    }
+    if (tile === TileType.LEDGE_JUMP_EAST) {
+      return direction === Direction.RIGHT;
+    }
     return !SOLID_TILES.has(tile);
   }
 

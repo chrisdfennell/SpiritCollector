@@ -64,13 +64,41 @@ Every map grid is a 2D array of numbers. Each number represents a tile type:
 | **9**  | FLOWERS     | Decorative flowers on grass - walkable | Yes |
 | **10** | LEDGE       | Solid ledge cliff - blocks movement entirely | **No** |
 | **11** | SIGN        | Sign post on grass - blocks movement | **No** |
-| **12** | LEDGE_JUMP  | One-way ledge - can ONLY walk onto it going DOWN | Special |
+| **12** | LEDGE_JUMP  | One-way ledge - can ONLY walk onto it going DOWN (south) | Special |
+| **13** | LEDGE_JUMP_NORTH | One-way ledge - can ONLY walk onto it going UP (north) | Special |
+| **14** | LEDGE_JUMP_WEST  | One-way ledge - can ONLY walk onto it going LEFT (west) | Special |
+| **15** | LEDGE_JUMP_EAST  | One-way ledge - can ONLY walk onto it going RIGHT (east) | Special |
 
-### Ledge Jump (12) Details
-- You can step onto tile 12 ONLY when moving DOWN (south)
-- When you do, your character hops down with an animation
-- You CANNOT walk onto it from any other direction (up, left, right)
-- Use this to create one-way shortcuts like Pokemon's ledge system
+### Directional Ledge Jump Details
+All ledge jump tiles (12-15) work the same way but face different directions:
+
+| Tile | Direction | Arrow Indicator | Hop Direction |
+|------|-----------|-----------------|---------------|
+| **12** LEDGE_JUMP | South | Down arrow (▼) | Player hops downward over the ledge |
+| **13** LEDGE_JUMP_NORTH | North | Up arrow (▲) | Player hops upward over the ledge |
+| **14** LEDGE_JUMP_WEST | West | Left arrow (◄) | Player hops leftward over the ledge |
+| **15** LEDGE_JUMP_EAST | East | Right arrow (►) | Player hops rightward over the ledge |
+
+- You can step onto the ledge tile ONLY when moving in its designated direction
+- When you do, your character hops over the ledge with an arc animation and lands one tile past it
+- You CANNOT walk onto it from any other direction
+- The tile on the landing side (one tile past the ledge in the hop direction) must be walkable
+- Use these to create one-way shortcuts like Pokemon's ledge system
+
+#### Example: South-facing ledge row (tile 12)
+```
+0, 0, 0, 0, 0     <- walkable ground (player approaches from here going down)
+0,12,12,12, 0     <- ledge jump tiles (player hops over these)
+0, 0, 0, 0, 0     <- landing area (must be walkable)
+```
+
+#### Example: West-facing ledge column (tile 14)
+```
+0, 0, 0
+0,14, 0     <- player approaches from the right, hops left over the ledge
+0, 0, 0
+```
+The tile to the left of 14 must be walkable for the player to land on.
 
 ---
 

@@ -23,6 +23,9 @@ export enum TileType {
   LEDGE = 10,
   SIGN = 11,
   LEDGE_JUMP = 12,
+  LEDGE_JUMP_NORTH = 13,
+  LEDGE_JUMP_WEST = 14,
+  LEDGE_JUMP_EAST = 15,
 }
 
 export interface Position {

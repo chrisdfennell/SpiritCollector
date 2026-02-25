@@ -136,6 +136,9 @@ export class MapRenderer {
       case TileType.LEDGE:      this.drawLedge(x, y, S); break;
       case TileType.SIGN:       this.drawSign(x, y, S); break;
       case TileType.LEDGE_JUMP: this.drawLedgeJump(x, y, S); break;
+      case TileType.LEDGE_JUMP_NORTH: this.drawLedgeJumpNorth(x, y, S); break;
+      case TileType.LEDGE_JUMP_WEST:  this.drawLedgeJumpWest(x, y, S); break;
+      case TileType.LEDGE_JUMP_EAST:  this.drawLedgeJumpEast(x, y, S); break;
     }
   }
 
@@ -401,6 +404,84 @@ export class MapRenderer {
       x + s / 2 + 6, y + 20,
     );
     this.gfx.fillRect(x + s / 2 - 2, y + 14, 4, 7);
+  }
+
+  private drawLedgeJumpNorth(x: number, y: number, s: number): void {
+    const p = this.palette;
+    // Ledge face at the top, base below
+    this.gfx.fillStyle(p.ledgeBase);
+    this.gfx.fillRect(x, y, s, s);
+
+    this.gfx.fillStyle(p.ledgeFace);
+    this.gfx.fillRect(x, y, s, 16);
+
+    this.gfx.fillStyle(p.ledgeHighlight);
+    this.gfx.fillRect(x, y + 15, s, 3);
+
+    // Shadow at top
+    this.gfx.fillStyle(0x305818, 0.6);
+    this.gfx.fillRect(x, y, s, 4);
+
+    // Up-arrow indicator
+    this.gfx.fillStyle(0xf0e840, 0.8);
+    this.gfx.fillTriangle(
+      x + s / 2, y + 6,
+      x + s / 2 - 6, y + 12,
+      x + s / 2 + 6, y + 12,
+    );
+    this.gfx.fillRect(x + s / 2 - 2, y + 11, 4, 7);
+  }
+
+  private drawLedgeJumpWest(x: number, y: number, s: number): void {
+    const p = this.palette;
+    // Ledge face on the left side
+    this.gfx.fillStyle(p.ledgeBase);
+    this.gfx.fillRect(x, y, s, s);
+
+    this.gfx.fillStyle(p.ledgeFace);
+    this.gfx.fillRect(x, y, 16, s);
+
+    this.gfx.fillStyle(p.ledgeHighlight);
+    this.gfx.fillRect(x + 15, y, 3, s);
+
+    // Shadow on left
+    this.gfx.fillStyle(0x305818, 0.6);
+    this.gfx.fillRect(x, y, 4, s);
+
+    // Left-arrow indicator
+    this.gfx.fillStyle(0xf0e840, 0.8);
+    this.gfx.fillTriangle(
+      x + 6, y + s / 2,
+      x + 12, y + s / 2 - 6,
+      x + 12, y + s / 2 + 6,
+    );
+    this.gfx.fillRect(x + 11, y + s / 2 - 2, 7, 4);
+  }
+
+  private drawLedgeJumpEast(x: number, y: number, s: number): void {
+    const p = this.palette;
+    // Ledge face on the right side
+    this.gfx.fillStyle(p.ledgeBase);
+    this.gfx.fillRect(x, y, s, s);
+
+    this.gfx.fillStyle(p.ledgeFace);
+    this.gfx.fillRect(x + 16, y, 16, s);
+
+    this.gfx.fillStyle(p.ledgeHighlight);
+    this.gfx.fillRect(x + 14, y, 3, s);
+
+    // Shadow on right
+    this.gfx.fillStyle(0x305818, 0.6);
+    this.gfx.fillRect(x + 28, y, 4, s);
+
+    // Right-arrow indicator
+    this.gfx.fillStyle(0xf0e840, 0.8);
+    this.gfx.fillTriangle(
+      x + 26, y + s / 2,
+      x + 20, y + s / 2 - 6,
+      x + 20, y + s / 2 + 6,
+    );
+    this.gfx.fillRect(x + 14, y + s / 2 - 2, 7, 4);
   }
 
   private drawSign(x: number, y: number, s: number): void {

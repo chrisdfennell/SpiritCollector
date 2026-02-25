@@ -25,5 +25,8 @@ export const TILE_COLORS: Record<TileType, number> = {
   [TileType.FLOWERS]:    0x7ec850,  // base is grass (flowers drawn on top)
   [TileType.LEDGE]:      0x5a8830,  // dark green ledge
   [TileType.SIGN]:       0x7ec850,  // base is grass (sign drawn on top)
-  [TileType.LEDGE_JUMP]: 0x5a8830,  // one-way jumpable ledge
+  [TileType.LEDGE_JUMP]: 0x5a8830,  // one-way jumpable ledge (south)
+  [TileType.LEDGE_JUMP_NORTH]: 0x5a8830,  // one-way jumpable ledge (north)
+  [TileType.LEDGE_JUMP_WEST]: 0x5a8830,  // one-way jumpable ledge (west)
+  [TileType.LEDGE_JUMP_EAST]: 0x5a8830,  // one-way jumpable ledge (east)
 };
