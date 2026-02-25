@@ -1,0 +1,31 @@
+{
+  "id": "waystation",
+  "name": "The Waystation",
+  "cols": 12,
+  "rows": 10,
+  "grid": [
+    [1,1,1,1,1,1,1,1,1,1,1,1],
+    [1,0,0,0,0,0,0,0,0,0,0,1],
+    [1,0,8,8,8,0,0,8,8,8,0,1],
+    [1,0,6,6,6,0,0,6,6,6,0,1],
+    [1,0,6,7,6,0,0,6,7,6,0,1],
+    [1,0,0,3,0,0,0,0,3,0,0,1],
+    [1,3,3,3,3,3,3,3,3,3,3,1],
+    [1,0,0,0,0,0,0,0,0,0,0,1],
+    [1,0,0,0,9,0,0,9,0,0,0,1],
+    [1,1,1,1,1,1,1,1,1,1,1,1]
+  ],
+  "exits": [
+    { "col": 0, "row": 6, "targetMap": "wild_steppe", "targetCol": 37, "targetRow": 28, "direction": "LEFT" },
+    { "col": 11, "row": 6, "targetMap": "desert_pass", "targetCol": 1, "targetRow": 12, "direction": "RIGHT" },
+    { "col": 3, "row": 4, "targetMap": "waystation_clinic", "targetCol": 4, "targetRow": 3, "direction": "UP" },
+    { "col": 8, "row": 4, "targetMap": "waystation_shop", "targetCol": 3, "targetRow": 3, "direction": "UP" }
+  ],
+  "npcs": [
+    { "npcId": "waystation_npc", "col": 5, "row": 8 }
+  ],
+  "encounterZone": null,
+  "playerSpawn": { "x": 5, "y": 6 },
+  "biomeType": "town",
+  "isSafeZone": true
+}

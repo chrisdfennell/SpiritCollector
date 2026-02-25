@@ -1,0 +1,800 @@
+[
+  {
+    "id": "priest",
+    "name": "Elder Maren",
+    "facing": "DOWN",
+    "placeholderColor": "#DDDD44",
+    "dialogue": [
+      {
+        "condition": { "flag": "hasFirstSpirit", "value": false },
+        "lines": [
+          "Welcome, young one. The spirits of this land are restless.",
+          "It is time you bonded with your first spirit companion.",
+          "Choose wisely -- this spirit will be your partner on your journey."
+        ],
+        "choices": [
+          { "label": "Emberpup (Fire)", "event": "chooseStarter", "eventData": { "speciesId": 1 } },
+          { "label": "Tidalin (Water)", "event": "chooseStarter", "eventData": { "speciesId": 2 } },
+          { "label": "Thornsprout (Grass)", "event": "chooseStarter", "eventData": { "speciesId": 3 } }
+        ]
+      },
+      {
+        "condition": { "flag": "hasFirstSpirit", "value": true },
+        "lines": [
+          "I see your spirit companion is doing well!",
+          "But I sense a disturbance in the land... the Ashen Peak stirs.",
+          "Long ago, the great dragon Pyrotitan fell into slumber at the summit.",
+          "If it awakens fully, its fury could engulf the region in flame.",
+          "You must journey far — through forest, desert, and mountain — to reach the Peak.",
+          "Only a collector with a deep bond to their spirits can calm the ancient dragon.",
+          "Go now. The fate of Spirit Haven may rest on your shoulders."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gate_guard",
+    "name": "Guard",
+    "facing": "LEFT",
+    "placeholderColor": "#888888",
+    "dialogue": [
+      {
+        "condition": { "flag": "hasFirstSpirit", "value": false },
+        "lines": [
+          "Halt! The Wild Steppe is too dangerous without a spirit companion.",
+          "Visit Elder Maren at the Spirit Sanctuary first.",
+          "It's the large building to the north."
+        ]
+      },
+      {
+        "condition": { "flag": "hasFirstSpirit", "value": true },
+        "lines": [
+          "You have a spirit companion now. Be careful out there!",
+          "The Wild Steppe is full of wild spirits."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "villager_1",
+    "name": "Villager",
+    "facing": "DOWN",
+    "placeholderColor": "#CC8844",
+    "dialogue": [
+      {
+        "lines": [
+          "Have you noticed the ground trembling lately?",
+          "The old folks say the Ashen Peak is waking up...",
+          "I hear Elder Maren at the Sanctuary knows more about it."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "villager_2",
+    "name": "Old Timer",
+    "facing": "RIGHT",
+    "placeholderColor": "#886644",
+    "dialogue": [
+      {
+        "condition": { "flag": "hasFirstSpirit", "value": false },
+        "lines": [
+          "You look like you're just starting out!",
+          "Head to the Spirit Sanctuary and talk to Elder Maren."
+        ]
+      },
+      {
+        "condition": { "flag": "hasFirstSpirit", "value": true },
+        "lines": [
+          "Ah, a spirit collector! I was one myself, back in the day.",
+          "I traveled as far as the Tundra Ridge before turning back.",
+          "They say beyond the ridge lies a volcanic trail, and further still... the Ashen Peak.",
+          "Two legendary dragons once kept this world in balance — Pyrotitan of flame and Abysskeeper of the abyss.",
+          "If the stories are true, you'll need every spirit you can find to face what's ahead."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "steppe_trainer",
+    "name": "Scout Riku",
+    "facing": "DOWN",
+    "placeholderColor": "#AA6644",
+    "trainer": {
+      "party": [
+        { "speciesId": 4, "level": 5 },
+        { "speciesId": 5, "level": 6 }
+      ],
+      "visionRange": 4,
+      "defeatFlag": "defeated_steppe_trainer",
+      "reward": { "items": [{ "itemId": 2, "quantity": 2 }] }
+    },
+    "dialogue": [
+      {
+        "condition": { "flag": "defeated_steppe_trainer", "value": false },
+        "lines": [
+          "Hey, you! I've been training out here on the steppe.",
+          "Let's see if your spirits can handle mine!"
+        ]
+      },
+      {
+        "condition": { "flag": "defeated_steppe_trainer", "value": true },
+        "lines": [
+          "You beat me fair and square. Your spirits are strong!",
+          "There are tougher trainers out in the forest and beyond."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "forest_ranger",
+    "name": "Ranger Elara",
+    "facing": "UP",
+    "placeholderColor": "#448844",
+    "trainer": {
+      "party": [
+        { "speciesId": 18, "level": 7 },
+        { "speciesId": 8, "level": 9 }
+      ],
+      "visionRange": 4,
+      "defeatFlag": "defeated_forest_ranger",
+      "reward": { "items": [{ "itemId": 9, "quantity": 3 }] }
+    },
+    "dialogue": [
+      {
+        "condition": { "flag": "defeated_forest_ranger", "value": false },
+        "lines": [
+          "Halt! No one passes through my woods without a test.",
+          "Show me what your spirits can do!"
+        ]
+      },
+      {
+        "condition": { "flag": "defeated_forest_ranger", "value": true },
+        "lines": [
+          "Well fought! The deeper woods are yours to explore.",
+          "Watch your step -- Venomoths lurk in the deeper patches.",
+          "Crystal Lake lies to the south if you follow the path."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "desert_trader",
+    "name": "Merchant Kael",
+    "facing": "DOWN",
+    "placeholderColor": "#CC9944",
+    "trainer": {
+      "party": [
+        { "speciesId": 9, "level": 10 },
+        { "speciesId": 5, "level": 11 }
+      ],
+      "visionRange": 4,
+      "defeatFlag": "defeated_desert_trader",
+      "reward": { "items": [{ "itemId": 10, "quantity": 2 }] }
+    },
+    "dialogue": [
+      {
+        "condition": { "flag": "defeated_desert_trader", "value": false },
+        "lines": [
+          "A traveler in the dunes? Let me test your worth!",
+          "The desert demands strength!"
+        ]
+      },
+      {
+        "condition": { "flag": "defeated_desert_trader", "value": true },
+        "lines": [
+          "You've earned my respect, traveler.",
+          "If you're brave enough, the pass to the north leads to Frostpeak Ridge.",
+          "The spirits there are even fiercer... but rarer too."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ice_hermit",
+    "name": "Hermit Frost",
+    "facing": "DOWN",
+    "placeholderColor": "#88BBDD",
+    "trainer": {
+      "party": [
+        { "speciesId": 13, "level": 12 },
+        { "speciesId": 7, "level": 13 }
+      ],
+      "visionRange": 4,
+      "defeatFlag": "defeated_ice_hermit",
+      "reward": { "items": [{ "itemId": 3, "quantity": 3 }] }
+    },
+    "dialogue": [
+      {
+        "condition": { "flag": "defeated_ice_hermit", "value": false },
+        "lines": [
+          "You dare set foot on Frostpeak Ridge?",
+          "Only the strongest survive here. Prove yourself!"
+        ]
+      },
+      {
+        "condition": { "flag": "defeated_ice_hermit", "value": true },
+        "lines": [
+          "Impressive... you've conquered the cold.",
+          "Crystallix and Frostbear roam these frozen wastes.",
+          "Only the strongest collectors survive up here."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fisher",
+    "name": "Old Finn",
+    "facing": "LEFT",
+    "placeholderColor": "#4488AA",
+    "trainer": {
+      "party": [
+        { "speciesId": 10, "level": 8 },
+        { "speciesId": 17, "level": 9 }
+      ],
+      "visionRange": 4,
+      "defeatFlag": "defeated_fisher",
+      "reward": { "items": [{ "itemId": 2, "quantity": 3 }] }
+    },
+    "dialogue": [
+      {
+        "condition": { "flag": "defeated_fisher", "value": false },
+        "lines": [
+          "Crystal Lake... finest fishing spot in the region.",
+          "But first, let me see if you're worthy of these waters!"
+        ]
+      },
+      {
+        "condition": { "flag": "defeated_fisher", "value": true },
+        "lines": [
+          "Ha! You've got skill, young one.",
+          "The reeds around the shore are full of water spirits.",
+          "Bubblefins are common, but if you're lucky...",
+          "...you might spot an Aquaserpent gliding through the deep."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "town_healer",
+    "name": "Nurse Sera",
+    "facing": "DOWN",
+    "placeholderColor": "#FF88AA",
+    "dialogue": [
+      {
+        "lines": [
+          "Welcome to the Spirit Haven clinic!",
+          "Let me take care of your spirits...",
+          "There! Your spirits are all healed up!"
+        ],
+        "event": "healParty"
+      }
+    ]
+  },
+  {
+    "id": "town_shopkeeper",
+    "name": "Merchant Rin",
+    "facing": "DOWN",
+    "placeholderColor": "#44BB88",
+    "dialogue": [
+      {
+        "lines": [
+          "Welcome to my shop! Take a look at what I have."
+        ],
+        "event": "openShop",
+        "eventData": { "shopItems": [1, 2, 5, 6, 8, 9] }
+      }
+    ]
+  },
+  {
+    "id": "waystation_healer",
+    "name": "Medic Tova",
+    "facing": "DOWN",
+    "placeholderColor": "#EE7799",
+    "dialogue": [
+      {
+        "lines": [
+          "You look tired from the road.",
+          "Let me patch up your spirits...",
+          "All done! Good as new!"
+        ],
+        "event": "healParty"
+      }
+    ]
+  },
+  {
+    "id": "waystation_shopkeeper",
+    "name": "Trader Wen",
+    "facing": "DOWN",
+    "placeholderColor": "#55AA77",
+    "dialogue": [
+      {
+        "lines": [
+          "I carry supplies for travelers heading through the wilds.",
+          "See anything you need?"
+        ],
+        "event": "openShop",
+        "eventData": { "shopItems": [1, 2, 7, 8, 9, 10] }
+      }
+    ]
+  },
+  {
+    "id": "waystation_npc",
+    "name": "Weary Traveler",
+    "facing": "LEFT",
+    "placeholderColor": "#AA8866",
+    "dialogue": [
+      {
+        "lines": [
+          "This waystation is a lifesaver.",
+          "The steppe to the west and the desert to the east are brutal.",
+          "Stock up on supplies before you head out!"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lakeside_healer",
+    "name": "Elder Kova",
+    "facing": "DOWN",
+    "placeholderColor": "#DD88CC",
+    "dialogue": [
+      {
+        "lines": [
+          "The lake spirits watch over this village.",
+          "Let me tend to your companions...",
+          "Your spirits are fully restored. Safe travels!"
+        ],
+        "event": "healParty"
+      }
+    ]
+  },
+  {
+    "id": "lakeside_shopkeeper",
+    "name": "Fisher's Bazaar",
+    "facing": "DOWN",
+    "placeholderColor": "#3399AA",
+    "dialogue": [
+      {
+        "lines": [
+          "Fresh from the lake! Well, not the potions.",
+          "But the orbs are hand-crafted! Take a look."
+        ],
+        "event": "openShop",
+        "eventData": { "shopItems": [2, 3, 4, 6, 9, 10] }
+      }
+    ]
+  },
+  {
+    "id": "lakeside_npc",
+    "name": "Village Elder",
+    "facing": "RIGHT",
+    "placeholderColor": "#887766",
+    "dialogue": [
+      {
+        "lines": [
+          "Lakeside Village has stood for generations.",
+          "The waters of Crystal Lake have healing properties.",
+          "Many rare water spirits make their home in the deep."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "volcanic_scout",
+    "name": "Pyro Scout Kira",
+    "facing": "DOWN",
+    "placeholderColor": "#DD4420",
+    "trainer": {
+      "party": [
+        { "speciesId": 31, "level": 14 },
+        { "speciesId": 9, "level": 15 },
+        { "speciesId": 24, "level": 16 }
+      ],
+      "visionRange": 4,
+      "defeatFlag": "defeated_volcanic_scout",
+      "reward": { "items": [{ "itemId": 3, "quantity": 2 }] }
+    },
+    "dialogue": [
+      {
+        "condition": { "flag": "defeated_volcanic_scout", "value": false },
+        "lines": [
+          "The volcanic trail burns hot! Think you can take the heat?"
+        ]
+      },
+      {
+        "condition": { "flag": "defeated_volcanic_scout", "value": true },
+        "lines": [
+          "You burned right through my team! Ember Town is just ahead."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "swamp_witch",
+    "name": "Bog Witch Mira",
+    "facing": "LEFT",
+    "placeholderColor": "#6B3D8B",
+    "trainer": {
+      "party": [
+        { "speciesId": 34, "level": 16 },
+        { "speciesId": 22, "level": 17 },
+        { "speciesId": 35, "level": 18 }
+      ],
+      "visionRange": 4,
+      "defeatFlag": "defeated_swamp_witch",
+      "reward": { "items": [{ "itemId": 10, "quantity": 2 }] }
+    },
+    "dialogue": [
+      {
+        "condition": { "flag": "defeated_swamp_witch", "value": false },
+        "lines": [
+          "The swamp claims all who enter unprepared...",
+          "Let me test if you deserve passage!"
+        ]
+      },
+      {
+        "condition": { "flag": "defeated_swamp_witch", "value": true },
+        "lines": [
+          "You've proven your worth. Bogmire Village lies deeper in."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mountain_climber",
+    "name": "Mountaineer Hale",
+    "facing": "UP",
+    "placeholderColor": "#888888",
+    "trainer": {
+      "party": [
+        { "speciesId": 37, "level": 20 },
+        { "speciesId": 11, "level": 21 },
+        { "speciesId": 38, "level": 22 },
+        { "speciesId": 45, "level": 23 }
+      ],
+      "visionRange": 5,
+      "defeatFlag": "defeated_mountaineer",
+      "reward": { "items": [{ "itemId": 20, "quantity": 3 }] }
+    },
+    "dialogue": [
+      {
+        "condition": { "flag": "defeated_mountaineer", "value": false },
+        "lines": [
+          "Only the strongest reach the summit!",
+          "Prepare yourself!"
+        ]
+      },
+      {
+        "condition": { "flag": "defeated_mountaineer", "value": true },
+        "lines": [
+          "The summit is yours. Summit Outpost is just beyond that ridge."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "coastal_sailor",
+    "name": "Sailor Nami",
+    "facing": "RIGHT",
+    "placeholderColor": "#2288BB",
+    "trainer": {
+      "party": [
+        { "speciesId": 39, "level": 17 },
+        { "speciesId": 2, "level": 18 },
+        { "speciesId": 40, "level": 20 }
+      ],
+      "visionRange": 4,
+      "defeatFlag": "defeated_sailor",
+      "reward": { "items": [{ "itemId": 9, "quantity": 5 }] }
+    },
+    "dialogue": [
+      {
+        "condition": { "flag": "defeated_sailor", "value": false },
+        "lines": [
+          "The sea breeds tough spirits!",
+          "Let's see if yours can ride the waves!"
+        ]
+      },
+      {
+        "condition": { "flag": "defeated_sailor", "value": true },
+        "lines": [
+          "You sail true! Port Breeze is just around the bend."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crystal_explorer",
+    "name": "Spelunker Gem",
+    "facing": "DOWN",
+    "placeholderColor": "#88DDFF",
+    "trainer": {
+      "party": [
+        { "speciesId": 29, "level": 22 },
+        { "speciesId": 12, "level": 23 },
+        { "speciesId": 47, "level": 25 }
+      ],
+      "visionRange": 4,
+      "defeatFlag": "defeated_spelunker",
+      "reward": { "items": [{ "itemId": 20, "quantity": 2 }, { "itemId": 21, "quantity": 1 }] }
+    },
+    "dialogue": [
+      {
+        "condition": { "flag": "defeated_spelunker", "value": false },
+        "lines": [
+          "These crystal caves hold ancient spirits!",
+          "Only a true collector can pass!"
+        ]
+      },
+      {
+        "condition": { "flag": "defeated_spelunker", "value": true },
+        "lines": [
+          "The crystals acknowledge your strength.",
+          "There are rumors of a Crystalwing nesting deeper in..."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ashen_guardian",
+    "name": "Guardian Blaze",
+    "facing": "DOWN",
+    "placeholderColor": "#FF2200",
+    "trainer": {
+      "party": [
+        { "speciesId": 33, "level": 28 },
+        { "speciesId": 42, "level": 29 },
+        { "speciesId": 43, "level": 28 },
+        { "speciesId": 49, "level": 30 }
+      ],
+      "visionRange": 5,
+      "defeatFlag": "defeated_guardian",
+      "reward": { "items": [{ "itemId": 11, "quantity": 1 }] }
+    },
+    "dialogue": [
+      {
+        "condition": { "flag": "defeated_guardian", "value": false },
+        "lines": [
+          "Halt! I am Guardian Blaze, sworn protector of the Ashen Peak.",
+          "For generations, my family has stood guard here, keeping trespassers from the summit.",
+          "The Pyrotitan sleeps above. Its slumber protects the entire region.",
+          "But the tremors grow stronger each day. The Lullaby of Spirits is failing.",
+          "If you truly believe you can restore the harmony, you must first prove your strength.",
+          "Only those who can best my spirits may approach the summit. Prepare yourself!"
+        ]
+      },
+      {
+        "condition": { "flag": "defeated_guardian", "value": true },
+        "lines": [
+          "Incredible... your bond with your spirits is unlike anything I've seen.",
+          "You carry spirits of many types — fire, water, grass, and more. That is the key.",
+          "The Lullaby of Spirits requires a collector bonded with every kind of spirit.",
+          "When you face Pyrotitan at the summit, do not fight it with brute force.",
+          "Your very presence — the harmony of all those spirit bonds — may be enough to restore the song.",
+          "Take this Master Orb. If the Lullaby alone isn't enough, you may need to capture the titan itself.",
+          "Go now, Spirit Collector. The fate of the land rests with you."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ember_healer",
+    "name": "Nurse Pyra",
+    "facing": "DOWN",
+    "placeholderColor": "#FF88AA",
+    "dialogue": [
+      {
+        "lines": [
+          "Welcome to Ember Town's clinic!",
+          "Let me tend to your spirits...",
+          "All healed up!"
+        ],
+        "event": "healParty"
+      }
+    ]
+  },
+  {
+    "id": "bogmire_healer",
+    "name": "Herbalist Moss",
+    "facing": "DOWN",
+    "placeholderColor": "#88CC88",
+    "dialogue": [
+      {
+        "lines": [
+          "These swamp herbs work wonders.",
+          "Let me patch up your spirits...",
+          "Good as new!"
+        ],
+        "event": "healParty"
+      }
+    ]
+  },
+  {
+    "id": "summit_healer",
+    "name": "Medic Alto",
+    "facing": "DOWN",
+    "placeholderColor": "#DD88BB",
+    "dialogue": [
+      {
+        "lines": [
+          "The altitude takes its toll.",
+          "Let me restore your spirits...",
+          "All patched up!"
+        ],
+        "event": "healParty"
+      }
+    ]
+  },
+  {
+    "id": "port_healer",
+    "name": "Nurse Marina",
+    "facing": "DOWN",
+    "placeholderColor": "#FF99BB",
+    "dialogue": [
+      {
+        "lines": [
+          "Welcome to Port Breeze hospital!",
+          "Let me take care of your spirits...",
+          "All healed up! Enjoy the city!"
+        ],
+        "event": "healParty"
+      }
+    ]
+  },
+  {
+    "id": "ember_shopkeeper",
+    "name": "Smith Forge",
+    "facing": "DOWN",
+    "placeholderColor": "#DD8844",
+    "dialogue": [
+      {
+        "lines": [
+          "Forged with volcanic heat! Take a look."
+        ],
+        "event": "openShop",
+        "eventData": { "shopItems": [2, 3, 7, 9, 10, 20] }
+      }
+    ]
+  },
+  {
+    "id": "bogmire_shopkeeper",
+    "name": "Trader Sludge",
+    "facing": "DOWN",
+    "placeholderColor": "#669966",
+    "dialogue": [
+      {
+        "lines": [
+          "Finest bog supplies! Don't mind the smell."
+        ],
+        "event": "openShop",
+        "eventData": { "shopItems": [2, 3, 4, 9, 10, 20] }
+      }
+    ]
+  },
+  {
+    "id": "summit_shopkeeper",
+    "name": "Trader Peak",
+    "facing": "DOWN",
+    "placeholderColor": "#99AABB",
+    "dialogue": [
+      {
+        "lines": [
+          "Supplies for the highest climbs. Browse away!"
+        ],
+        "event": "openShop",
+        "eventData": { "shopItems": [3, 4, 7, 10, 20, 21] }
+      }
+    ]
+  },
+  {
+    "id": "port_shopkeeper",
+    "name": "Harbor Market",
+    "facing": "DOWN",
+    "placeholderColor": "#44AACC",
+    "dialogue": [
+      {
+        "lines": [
+          "The finest goods from across the seas!",
+          "We have everything a collector could need."
+        ],
+        "event": "openShop",
+        "eventData": { "shopItems": [3, 4, 6, 10, 11, 20, 21] }
+      }
+    ]
+  },
+  {
+    "id": "ember_npc",
+    "name": "Fire Keeper",
+    "facing": "RIGHT",
+    "placeholderColor": "#CC6622",
+    "dialogue": [
+      {
+        "lines": [
+          "Welcome to Ember Town, stranger. We live in the shadow of the volcano.",
+          "The tremors have been getting worse. Pyrotitan stirs in its sleep.",
+          "My grandmother told me that centuries ago, Pyrotitan and Abysskeeper fought a terrible war.",
+          "The other spirits banded together and sang them both to sleep.",
+          "But something is breaking the song... and Pyrotitan is waking.",
+          "If you're heading to the Peak, take the mountain pass east. But be prepared."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bogmire_npc",
+    "name": "Swamp Elder",
+    "facing": "DOWN",
+    "placeholderColor": "#556644",
+    "dialogue": [
+      {
+        "lines": [
+          "Bogmire Village has survived these swamps for generations.",
+          "We've noticed the swamp spirits growing restless lately. Aggressive, even.",
+          "The elders believe it's connected to the disturbance at the Ashen Peak.",
+          "When one legendary stirs, all spirits feel it in their bones.",
+          "Take the coastal road south to Port Breeze — you'll find answers there.",
+          "An old sailor in Port Breeze claims to have seen the other legendary... Abysskeeper."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "summit_npc",
+    "name": "Hermit Sage",
+    "facing": "LEFT",
+    "placeholderColor": "#778899",
+    "dialogue": [
+      {
+        "lines": [
+          "You've made it to Summit Outpost... few travelers come this far.",
+          "The Crystal Caves below lead to Port Breeze, but they're treacherous.",
+          "Dragon spirits roam those tunnels — Drakelings and even Stormwyrms.",
+          "I've spent my life studying the ancient legends carved into these mountain walls.",
+          "The carvings tell of a Lullaby of Spirits — a harmony that keeps the legendaries sleeping.",
+          "Each spirit type contributes a note. Fire, water, grass, ice, dragon...",
+          "Perhaps a collector who has bonded with many types of spirits could restore the song."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "port_npc1",
+    "name": "Seaside Scholar",
+    "facing": "DOWN",
+    "placeholderColor": "#6688AA",
+    "dialogue": [
+      {
+        "lines": [
+          "Port Breeze is the largest city in the region, and the last stop before the Ashen Peak.",
+          "I've spent years researching the Lullaby of Spirits — the ancient harmony that keeps the legendaries dormant.",
+          "The Lullaby isn't just one melody. It's a chorus — each spirit type adds a note to the song.",
+          "Fire, water, grass, ice, electric, ground, poison, fighting, normal... and dragon.",
+          "When the song is complete, the legendaries sleep peacefully. But if even one note falters...",
+          "I believe the dragon note has been silent for centuries. No one bonds with dragon spirits anymore.",
+          "If you've collected many types of spirits on your journey, you may be the key to restoring the Lullaby."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "port_npc2",
+    "name": "Old Sailor",
+    "facing": "LEFT",
+    "placeholderColor": "#445566",
+    "dialogue": [
+      {
+        "lines": [
+          "Aye, I've seen things most folk wouldn't believe.",
+          "Out in the deep waters, on a moonless night... I saw the Abysskeeper rise.",
+          "An ancient water dragon, bigger than my ship. Its eyes glowed like lanterns in the dark.",
+          "It didn't attack. It just... watched. Like it was guarding something beneath the waves.",
+          "The old legends say Pyrotitan and Abysskeeper were once allies, not enemies.",
+          "They only fought when the balance between fire and water was broken.",
+          "If Pyrotitan wakes at the Peak, Abysskeeper will rise too. And then...",
+          "Well, let's just say you'd better calm that fire dragon before the sea dragon joins the fray."
+        ]
+      }
+    ]
+  }
+]

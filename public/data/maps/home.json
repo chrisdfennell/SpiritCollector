@@ -1,0 +1,24 @@
+{
+  "id": "home",
+  "name": "Home",
+  "cols": 10,
+  "rows": 8,
+  "grid": [
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 6, 6, 6, 6, 6, 6, 6, 6, 1],
+    [1, 6, 0, 0, 0, 0, 0, 0, 6, 1],
+    [1, 6, 0, 0, 0, 0, 0, 0, 6, 1],
+    [1, 6, 0, 0, 0, 0, 0, 0, 6, 1],
+    [1, 6, 0, 0, 0, 0, 0, 0, 6, 1],
+    [1, 6, 0, 0, 7, 0, 0, 0, 6, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  ],
+  "exits": [
+    { "col": 4, "row": 6, "targetMap": "town", "targetCol": 3, "targetRow": 5, "direction": "DOWN" }
+  ],
+  "npcs": [],
+  "encounterZone": null,
+  "playerSpawn": { "x": 5, "y": 4 },
+  "biomeType": "interior",
+  "isSafeZone": true
+}

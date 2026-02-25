@@ -1,0 +1,31 @@
+{
+  "id": "lakeside_village",
+  "name": "Lakeside Village",
+  "cols": 12,
+  "rows": 10,
+  "grid": [
+    [1,1,1,1,1,3,1,1,1,1,1,1],
+    [1,0,0,0,0,3,0,0,0,0,0,1],
+    [1,0,8,8,8,0,0,8,8,8,0,1],
+    [1,0,6,6,6,0,0,6,6,6,0,1],
+    [1,0,6,7,6,0,0,6,7,6,0,1],
+    [1,0,0,3,0,0,0,0,3,0,0,1],
+    [1,3,3,3,3,3,3,3,3,3,3,1],
+    [1,0,0,0,0,0,0,0,0,0,0,1],
+    [1,0,0,9,0,0,0,0,9,0,0,1],
+    [1,1,1,1,1,3,1,1,1,1,1,1]
+  ],
+  "exits": [
+    { "col": 5, "row": 0, "targetMap": "lake_shore", "targetCol": 17, "targetRow": 23, "direction": "UP" },
+    { "col": 3, "row": 4, "targetMap": "lakeside_clinic", "targetCol": 4, "targetRow": 3, "direction": "UP" },
+    { "col": 8, "row": 4, "targetMap": "lakeside_shop", "targetCol": 3, "targetRow": 3, "direction": "UP" },
+    { "col": 5, "row": 9, "targetMap": "swamp_depths", "targetCol": 17, "targetRow": 1, "direction": "DOWN" }
+  ],
+  "npcs": [
+    { "npcId": "lakeside_npc", "col": 8, "row": 7 }
+  ],
+  "encounterZone": null,
+  "playerSpawn": { "x": 5, "y": 6 },
+  "biomeType": "town",
+  "isSafeZone": true
+}

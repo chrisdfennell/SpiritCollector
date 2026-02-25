@@ -1,0 +1,136 @@
+{
+  "wild_steppe": {
+    "encounterRate": 0.12,
+    "pool": [
+      { "speciesId": 4, "minLevel": 3, "maxLevel": 6, "weight": 25 },
+      { "speciesId": 5, "minLevel": 3, "maxLevel": 6, "weight": 25 },
+      { "speciesId": 6, "minLevel": 3, "maxLevel": 5, "weight": 15 },
+      { "speciesId": 9, "minLevel": 3, "maxLevel": 5, "weight": 10 },
+      { "speciesId": 10, "minLevel": 3, "maxLevel": 5, "weight": 10 },
+      { "speciesId": 14, "minLevel": 4, "maxLevel": 6, "weight": 8 },
+      { "speciesId": 15, "minLevel": 4, "maxLevel": 7, "weight": 5 },
+      { "speciesId": 7, "minLevel": 5, "maxLevel": 7, "weight": 2 }
+    ]
+  },
+  "forest_path": {
+    "encounterRate": 0.15,
+    "pool": [
+      { "speciesId": 18, "minLevel": 5, "maxLevel": 8, "weight": 25 },
+      { "speciesId": 14, "minLevel": 5, "maxLevel": 8, "weight": 20 },
+      { "speciesId": 4, "minLevel": 5, "maxLevel": 7, "weight": 15 },
+      { "speciesId": 8, "minLevel": 6, "maxLevel": 9, "weight": 12 },
+      { "speciesId": 15, "minLevel": 6, "maxLevel": 9, "weight": 10 },
+      { "speciesId": 22, "minLevel": 7, "maxLevel": 9, "weight": 8 },
+      { "speciesId": 19, "minLevel": 7, "maxLevel": 9, "weight": 6 },
+      { "speciesId": 30, "minLevel": 8, "maxLevel": 10, "weight": 1 }
+    ]
+  },
+  "desert_pass": {
+    "encounterRate": 0.14,
+    "pool": [
+      { "speciesId": 5, "minLevel": 8, "maxLevel": 11, "weight": 20 },
+      { "speciesId": 9, "minLevel": 8, "maxLevel": 11, "weight": 20 },
+      { "speciesId": 27, "minLevel": 8, "maxLevel": 11, "weight": 15 },
+      { "speciesId": 11, "minLevel": 9, "maxLevel": 12, "weight": 12 },
+      { "speciesId": 16, "minLevel": 9, "maxLevel": 12, "weight": 10 },
+      { "speciesId": 23, "minLevel": 10, "maxLevel": 13, "weight": 6 },
+      { "speciesId": 24, "minLevel": 10, "maxLevel": 13, "weight": 4 },
+      { "speciesId": 26, "minLevel": 11, "maxLevel": 13, "weight": 3 }
+    ]
+  },
+  "tundra_ridge": {
+    "encounterRate": 0.15,
+    "pool": [
+      { "speciesId": 13, "minLevel": 10, "maxLevel": 14, "weight": 25 },
+      { "speciesId": 7, "minLevel": 10, "maxLevel": 14, "weight": 20 },
+      { "speciesId": 28, "minLevel": 11, "maxLevel": 14, "weight": 15 },
+      { "speciesId": 12, "minLevel": 11, "maxLevel": 14, "weight": 10 },
+      { "speciesId": 21, "minLevel": 12, "maxLevel": 15, "weight": 8 },
+      { "speciesId": 29, "minLevel": 12, "maxLevel": 15, "weight": 6 },
+      { "speciesId": 25, "minLevel": 13, "maxLevel": 15, "weight": 4 }
+    ]
+  },
+  "lake_shore": {
+    "encounterRate": 0.13,
+    "pool": [
+      { "speciesId": 17, "minLevel": 6, "maxLevel": 9, "weight": 25 },
+      { "speciesId": 10, "minLevel": 6, "maxLevel": 9, "weight": 25 },
+      { "speciesId": 18, "minLevel": 6, "maxLevel": 9, "weight": 15 },
+      { "speciesId": 20, "minLevel": 7, "maxLevel": 10, "weight": 12 },
+      { "speciesId": 22, "minLevel": 7, "maxLevel": 10, "weight": 8 },
+      { "speciesId": 25, "minLevel": 8, "maxLevel": 10, "weight": 4 }
+    ]
+  },
+  "volcanic_trail": {
+    "encounterRate": 0.14,
+    "pool": [
+      { "speciesId": 31, "minLevel": 12, "maxLevel": 15, "weight": 25 },
+      { "speciesId": 9, "minLevel": 12, "maxLevel": 15, "weight": 20 },
+      { "speciesId": 5, "minLevel": 12, "maxLevel": 16, "weight": 15 },
+      { "speciesId": 27, "minLevel": 13, "maxLevel": 16, "weight": 12 },
+      { "speciesId": 32, "minLevel": 14, "maxLevel": 18, "weight": 8 },
+      { "speciesId": 24, "minLevel": 15, "maxLevel": 18, "weight": 6 },
+      { "speciesId": 43, "minLevel": 15, "maxLevel": 18, "weight": 3 }
+    ]
+  },
+  "swamp_depths": {
+    "encounterRate": 0.16,
+    "pool": [
+      { "speciesId": 34, "minLevel": 14, "maxLevel": 17, "weight": 25 },
+      { "speciesId": 14, "minLevel": 14, "maxLevel": 17, "weight": 20 },
+      { "speciesId": 22, "minLevel": 14, "maxLevel": 18, "weight": 15 },
+      { "speciesId": 44, "minLevel": 15, "maxLevel": 19, "weight": 12 },
+      { "speciesId": 35, "minLevel": 16, "maxLevel": 20, "weight": 8 },
+      { "speciesId": 8, "minLevel": 16, "maxLevel": 20, "weight": 6 },
+      { "speciesId": 36, "minLevel": 18, "maxLevel": 20, "weight": 2 }
+    ]
+  },
+  "coastal_road": {
+    "encounterRate": 0.13,
+    "pool": [
+      { "speciesId": 39, "minLevel": 15, "maxLevel": 18, "weight": 25 },
+      { "speciesId": 17, "minLevel": 15, "maxLevel": 18, "weight": 20 },
+      { "speciesId": 48, "minLevel": 15, "maxLevel": 19, "weight": 15 },
+      { "speciesId": 46, "minLevel": 16, "maxLevel": 20, "weight": 12 },
+      { "speciesId": 40, "minLevel": 18, "maxLevel": 22, "weight": 8 },
+      { "speciesId": 2, "minLevel": 17, "maxLevel": 20, "weight": 6 },
+      { "speciesId": 50, "minLevel": 20, "maxLevel": 22, "weight": 1 }
+    ]
+  },
+  "mountain_pass": {
+    "encounterRate": 0.14,
+    "pool": [
+      { "speciesId": 37, "minLevel": 18, "maxLevel": 22, "weight": 25 },
+      { "speciesId": 45, "minLevel": 18, "maxLevel": 22, "weight": 18 },
+      { "speciesId": 11, "minLevel": 19, "maxLevel": 23, "weight": 15 },
+      { "speciesId": 23, "minLevel": 20, "maxLevel": 24, "weight": 10 },
+      { "speciesId": 38, "minLevel": 20, "maxLevel": 25, "weight": 8 },
+      { "speciesId": 29, "minLevel": 22, "maxLevel": 25, "weight": 5 },
+      { "speciesId": 41, "minLevel": 22, "maxLevel": 25, "weight": 2 }
+    ]
+  },
+  "crystal_caves": {
+    "encounterRate": 0.15,
+    "pool": [
+      { "speciesId": 29, "minLevel": 20, "maxLevel": 24, "weight": 22 },
+      { "speciesId": 13, "minLevel": 20, "maxLevel": 24, "weight": 18 },
+      { "speciesId": 12, "minLevel": 21, "maxLevel": 25, "weight": 15 },
+      { "speciesId": 45, "minLevel": 22, "maxLevel": 26, "weight": 12 },
+      { "speciesId": 41, "minLevel": 22, "maxLevel": 26, "weight": 10 },
+      { "speciesId": 47, "minLevel": 24, "maxLevel": 28, "weight": 5 },
+      { "speciesId": 42, "minLevel": 25, "maxLevel": 28, "weight": 2 }
+    ]
+  },
+  "ashen_peak": {
+    "encounterRate": 0.16,
+    "pool": [
+      { "speciesId": 32, "minLevel": 25, "maxLevel": 30, "weight": 20 },
+      { "speciesId": 43, "minLevel": 25, "maxLevel": 30, "weight": 18 },
+      { "speciesId": 33, "minLevel": 27, "maxLevel": 32, "weight": 14 },
+      { "speciesId": 41, "minLevel": 26, "maxLevel": 30, "weight": 12 },
+      { "speciesId": 42, "minLevel": 28, "maxLevel": 33, "weight": 8 },
+      { "speciesId": 47, "minLevel": 28, "maxLevel": 33, "weight": 5 },
+      { "speciesId": 49, "minLevel": 30, "maxLevel": 35, "weight": 1 }
+    ]
+  }
+}

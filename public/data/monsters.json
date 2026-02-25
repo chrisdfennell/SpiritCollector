@@ -1,0 +1,804 @@
+[
+  {
+    "id": 1,
+    "name": "Emberpup",
+    "types": ["fire"],
+    "baseStats": { "hp": 45, "atk": 60, "def": 40, "spAtk": 70, "spDef": 50, "speed": 65 },
+    "baseExpYield": 76,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 1 },
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 5, "moveId": 4 },
+      { "learnLevel": 8, "moveId": 25 },
+      { "learnLevel": 12, "moveId": 8 },
+      { "learnLevel": 16, "moveId": 9 },
+      { "learnLevel": 22, "moveId": 19 },
+      { "learnLevel": 28, "moveId": 4 }
+    ],
+    "placeholderColor": "#FF4444",
+    "rarity": "uncommon"
+  },
+  {
+    "id": 2,
+    "name": "Tidalin",
+    "types": ["water"],
+    "baseStats": { "hp": 50, "atk": 45, "def": 55, "spAtk": 65, "spDef": 60, "speed": 50 },
+    "baseExpYield": 75,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 2 },
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 5, "moveId": 5 },
+      { "learnLevel": 8, "moveId": 8 },
+      { "learnLevel": 14, "moveId": 10 },
+      { "learnLevel": 20, "moveId": 9 },
+      { "learnLevel": 25, "moveId": 26 },
+      { "learnLevel": 30, "moveId": 11 }
+    ],
+    "placeholderColor": "#4488FF",
+    "rarity": "uncommon"
+  },
+  {
+    "id": 3,
+    "name": "Thornsprout",
+    "types": ["grass"],
+    "baseStats": { "hp": 55, "atk": 50, "def": 60, "spAtk": 55, "spDef": 55, "speed": 45 },
+    "baseExpYield": 74,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 6 },
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 5, "moveId": 7 },
+      { "learnLevel": 8, "moveId": 27 },
+      { "learnLevel": 14, "moveId": 16 },
+      { "learnLevel": 20, "moveId": 9 },
+      { "learnLevel": 25, "moveId": 28 },
+      { "learnLevel": 30, "moveId": 18 }
+    ],
+    "placeholderColor": "#44CC44",
+    "rarity": "uncommon"
+  },
+  {
+    "id": 4,
+    "name": "Dustmite",
+    "types": ["normal"],
+    "baseStats": { "hp": 50, "atk": 45, "def": 45, "spAtk": 40, "spDef": 45, "speed": 55 },
+    "baseExpYield": 61,
+    "evolvesTo": { "speciesId": 19, "level": 12 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 4, "moveId": 8 },
+      { "learnLevel": 8, "moveId": 13 },
+      { "learnLevel": 12, "moveId": 9 },
+      { "learnLevel": 16, "moveId": 19 },
+      { "learnLevel": 20, "moveId": 14 }
+    ],
+    "placeholderColor": "#B8A080",
+    "rarity": "common"
+  },
+  {
+    "id": 5,
+    "name": "Pebblit",
+    "types": ["ground"],
+    "baseStats": { "hp": 55, "atk": 50, "def": 55, "spAtk": 35, "spDef": 45, "speed": 40 },
+    "baseExpYield": 61,
+    "evolvesTo": { "speciesId": 20, "level": 16 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 19 },
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 5, "moveId": 21 },
+      { "learnLevel": 8, "moveId": 8 },
+      { "learnLevel": 12, "moveId": 2 },
+      { "learnLevel": 16, "moveId": 9 },
+      { "learnLevel": 20, "moveId": 20 }
+    ],
+    "placeholderColor": "#A08050",
+    "rarity": "common"
+  },
+  {
+    "id": 6,
+    "name": "Zappfly",
+    "types": ["electric"],
+    "baseStats": { "hp": 40, "atk": 35, "def": 35, "spAtk": 55, "spDef": 45, "speed": 70 },
+    "baseExpYield": 61,
+    "evolvesTo": { "speciesId": 12, "level": 14 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 13 },
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 5, "moveId": 14 },
+      { "learnLevel": 8, "moveId": 8 },
+      { "learnLevel": 12, "moveId": 15 },
+      { "learnLevel": 16, "moveId": 9 },
+      { "learnLevel": 20, "moveId": 29 }
+    ],
+    "placeholderColor": "#E8D040",
+    "rarity": "common"
+  },
+  {
+    "id": 7,
+    "name": "Frostkit",
+    "types": ["ice"],
+    "baseStats": { "hp": 50, "atk": 45, "def": 50, "spAtk": 60, "spDef": 55, "speed": 50 },
+    "baseExpYield": 72,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 10 },
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 5, "moveId": 11 },
+      { "learnLevel": 8, "moveId": 8 },
+      { "learnLevel": 14, "moveId": 2 },
+      { "learnLevel": 20, "moveId": 12 },
+      { "learnLevel": 25, "moveId": 9 },
+      { "learnLevel": 30, "moveId": 22 }
+    ],
+    "placeholderColor": "#88CCEE",
+    "rarity": "uncommon"
+  },
+  {
+    "id": 8,
+    "name": "Thornvine",
+    "types": ["grass", "poison"],
+    "baseStats": { "hp": 55, "atk": 50, "def": 55, "spAtk": 60, "spDef": 55, "speed": 45 },
+    "baseExpYield": 74,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 6 },
+      { "learnLevel": 1, "moveId": 16 },
+      { "learnLevel": 5, "moveId": 17 },
+      { "learnLevel": 8, "moveId": 27 },
+      { "learnLevel": 14, "moveId": 18 },
+      { "learnLevel": 20, "moveId": 7 },
+      { "learnLevel": 25, "moveId": 28 },
+      { "learnLevel": 30, "moveId": 9 }
+    ],
+    "placeholderColor": "#60A030",
+    "rarity": "uncommon"
+  },
+  {
+    "id": 9,
+    "name": "Flamander",
+    "types": ["fire"],
+    "baseStats": { "hp": 50, "atk": 55, "def": 45, "spAtk": 50, "spDef": 45, "speed": 45 },
+    "baseExpYield": 63,
+    "evolvesTo": { "speciesId": 16, "level": 14 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 1 },
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 4, "moveId": 25 },
+      { "learnLevel": 8, "moveId": 8 },
+      { "learnLevel": 12, "moveId": 4 },
+      { "learnLevel": 16, "moveId": 19 },
+      { "learnLevel": 20, "moveId": 9 }
+    ],
+    "placeholderColor": "#E86030",
+    "rarity": "common"
+  },
+  {
+    "id": 10,
+    "name": "Bubblefin",
+    "types": ["water"],
+    "baseStats": { "hp": 50, "atk": 40, "def": 50, "spAtk": 50, "spDef": 50, "speed": 40 },
+    "baseExpYield": 61,
+    "evolvesTo": { "speciesId": 2, "level": 14 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 2 },
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 5, "moveId": 5 },
+      { "learnLevel": 8, "moveId": 8 },
+      { "learnLevel": 12, "moveId": 10 },
+      { "learnLevel": 16, "moveId": 26 },
+      { "learnLevel": 20, "moveId": 9 }
+    ],
+    "placeholderColor": "#60A0E0",
+    "rarity": "common"
+  },
+  {
+    "id": 11,
+    "name": "Stonehelm",
+    "types": ["ground", "fighting"],
+    "baseStats": { "hp": 65, "atk": 60, "def": 65, "spAtk": 35, "spDef": 50, "speed": 55 },
+    "baseExpYield": 76,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 19 },
+      { "learnLevel": 1, "moveId": 22 },
+      { "learnLevel": 5, "moveId": 21 },
+      { "learnLevel": 8, "moveId": 8 },
+      { "learnLevel": 14, "moveId": 30 },
+      { "learnLevel": 20, "moveId": 23 },
+      { "learnLevel": 25, "moveId": 20 },
+      { "learnLevel": 30, "moveId": 9 }
+    ],
+    "placeholderColor": "#907040",
+    "rarity": "uncommon"
+  },
+  {
+    "id": 12,
+    "name": "Voltail",
+    "types": ["electric"],
+    "baseStats": { "hp": 50, "atk": 45, "def": 45, "spAtk": 65, "spDef": 50, "speed": 65 },
+    "baseExpYield": 74,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 13 },
+      { "learnLevel": 3, "moveId": 14 },
+      { "learnLevel": 7, "moveId": 15 },
+      { "learnLevel": 12, "moveId": 8 },
+      { "learnLevel": 16, "moveId": 29 },
+      { "learnLevel": 20, "moveId": 9 },
+      { "learnLevel": 25, "moveId": 3 },
+      { "learnLevel": 30, "moveId": 22 }
+    ],
+    "placeholderColor": "#D0C020",
+    "rarity": "uncommon"
+  },
+  {
+    "id": 13,
+    "name": "Glacipede",
+    "types": ["ice"],
+    "baseStats": { "hp": 50, "atk": 45, "def": 50, "spAtk": 45, "spDef": 50, "speed": 40 },
+    "baseExpYield": 61,
+    "evolvesTo": { "speciesId": 7, "level": 14 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 10 },
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 8, "moveId": 11 },
+      { "learnLevel": 12, "moveId": 8 },
+      { "learnLevel": 16, "moveId": 2 },
+      { "learnLevel": 20, "moveId": 12 }
+    ],
+    "placeholderColor": "#90D0E0",
+    "rarity": "common"
+  },
+  {
+    "id": 14,
+    "name": "Toxitoad",
+    "types": ["poison"],
+    "baseStats": { "hp": 55, "atk": 45, "def": 50, "spAtk": 50, "spDef": 50, "speed": 40 },
+    "baseExpYield": 63,
+    "evolvesTo": { "speciesId": 8, "level": 16 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 16 },
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 5, "moveId": 17 },
+      { "learnLevel": 8, "moveId": 6 },
+      { "learnLevel": 12, "moveId": 8 },
+      { "learnLevel": 16, "moveId": 18 },
+      { "learnLevel": 20, "moveId": 9 }
+    ],
+    "placeholderColor": "#A050C0",
+    "rarity": "common"
+  },
+  {
+    "id": 15,
+    "name": "Brawlpup",
+    "types": ["fighting"],
+    "baseStats": { "hp": 50, "atk": 60, "def": 45, "spAtk": 35, "spDef": 45, "speed": 55 },
+    "baseExpYield": 63,
+    "evolvesTo": { "speciesId": 11, "level": 16 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 22 },
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 5, "moveId": 30 },
+      { "learnLevel": 8, "moveId": 8 },
+      { "learnLevel": 12, "moveId": 19 },
+      { "learnLevel": 16, "moveId": 23 },
+      { "learnLevel": 20, "moveId": 9 }
+    ],
+    "placeholderColor": "#C06040",
+    "rarity": "common"
+  },
+  {
+    "id": 16,
+    "name": "Cinderfox",
+    "types": ["fire"],
+    "baseStats": { "hp": 55, "atk": 60, "def": 50, "spAtk": 65, "spDef": 50, "speed": 60 },
+    "baseExpYield": 78,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 1 },
+      { "learnLevel": 3, "moveId": 25 },
+      { "learnLevel": 7, "moveId": 4 },
+      { "learnLevel": 12, "moveId": 8 },
+      { "learnLevel": 16, "moveId": 9 },
+      { "learnLevel": 20, "moveId": 19 },
+      { "learnLevel": 25, "moveId": 22 },
+      { "learnLevel": 30, "moveId": 4 }
+    ],
+    "placeholderColor": "#E04020",
+    "rarity": "uncommon"
+  },
+  {
+    "id": 17,
+    "name": "Raindrop",
+    "types": ["water"],
+    "baseStats": { "hp": 45, "atk": 35, "def": 45, "spAtk": 55, "spDef": 50, "speed": 40 },
+    "baseExpYield": 59,
+    "evolvesTo": { "speciesId": 25, "level": 22 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 2 },
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 8, "moveId": 5 },
+      { "learnLevel": 12, "moveId": 10 },
+      { "learnLevel": 16, "moveId": 8 },
+      { "learnLevel": 20, "moveId": 26 }
+    ],
+    "placeholderColor": "#80B8E8",
+    "rarity": "common"
+  },
+  {
+    "id": 18,
+    "name": "Leafling",
+    "types": ["grass"],
+    "baseStats": { "hp": 45, "atk": 40, "def": 45, "spAtk": 50, "spDef": 50, "speed": 40 },
+    "baseExpYield": 59,
+    "evolvesTo": { "speciesId": 3, "level": 14 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 6 },
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 5, "moveId": 27 },
+      { "learnLevel": 8, "moveId": 8 },
+      { "learnLevel": 12, "moveId": 16 },
+      { "learnLevel": 16, "moveId": 7 },
+      { "learnLevel": 20, "moveId": 9 }
+    ],
+    "placeholderColor": "#70C050",
+    "rarity": "common"
+  },
+  {
+    "id": 19,
+    "name": "Sparkhare",
+    "types": ["electric", "normal"],
+    "baseStats": { "hp": 50, "atk": 50, "def": 45, "spAtk": 60, "spDef": 50, "speed": 65 },
+    "baseExpYield": 74,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 13 },
+      { "learnLevel": 1, "moveId": 8 },
+      { "learnLevel": 5, "moveId": 14 },
+      { "learnLevel": 10, "moveId": 3 },
+      { "learnLevel": 16, "moveId": 15 },
+      { "learnLevel": 20, "moveId": 9 },
+      { "learnLevel": 25, "moveId": 29 },
+      { "learnLevel": 30, "moveId": 22 }
+    ],
+    "placeholderColor": "#E8C830",
+    "rarity": "uncommon"
+  },
+  {
+    "id": 20,
+    "name": "Muddler",
+    "types": ["ground", "water"],
+    "baseStats": { "hp": 60, "atk": 50, "def": 55, "spAtk": 50, "spDef": 50, "speed": 45 },
+    "baseExpYield": 72,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 19 },
+      { "learnLevel": 1, "moveId": 2 },
+      { "learnLevel": 5, "moveId": 21 },
+      { "learnLevel": 10, "moveId": 5 },
+      { "learnLevel": 16, "moveId": 8 },
+      { "learnLevel": 20, "moveId": 20 },
+      { "learnLevel": 25, "moveId": 26 },
+      { "learnLevel": 30, "moveId": 9 }
+    ],
+    "placeholderColor": "#806840",
+    "rarity": "uncommon"
+  },
+  {
+    "id": 21,
+    "name": "Frostbear",
+    "types": ["ice", "fighting"],
+    "baseStats": { "hp": 75, "atk": 70, "def": 60, "spAtk": 55, "spDef": 60, "speed": 60 },
+    "baseExpYield": 96,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 10 },
+      { "learnLevel": 1, "moveId": 22 },
+      { "learnLevel": 5, "moveId": 11 },
+      { "learnLevel": 8, "moveId": 23 },
+      { "learnLevel": 14, "moveId": 30 },
+      { "learnLevel": 20, "moveId": 12 },
+      { "learnLevel": 25, "moveId": 24 },
+      { "learnLevel": 30, "moveId": 9 }
+    ],
+    "placeholderColor": "#70A8D0",
+    "rarity": "rare"
+  },
+  {
+    "id": 22,
+    "name": "Venomoth",
+    "types": ["poison", "grass"],
+    "baseStats": { "hp": 55, "atk": 45, "def": 50, "spAtk": 60, "spDef": 55, "speed": 45 },
+    "baseExpYield": 72,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 16 },
+      { "learnLevel": 1, "moveId": 6 },
+      { "learnLevel": 5, "moveId": 17 },
+      { "learnLevel": 8, "moveId": 27 },
+      { "learnLevel": 14, "moveId": 18 },
+      { "learnLevel": 20, "moveId": 7 },
+      { "learnLevel": 25, "moveId": 28 },
+      { "learnLevel": 30, "moveId": 8 }
+    ],
+    "placeholderColor": "#8840A0",
+    "rarity": "uncommon"
+  },
+  {
+    "id": 23,
+    "name": "Ironpaw",
+    "types": ["fighting", "ground"],
+    "baseStats": { "hp": 70, "atk": 75, "def": 60, "spAtk": 40, "spDef": 55, "speed": 70 },
+    "baseExpYield": 94,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 22 },
+      { "learnLevel": 1, "moveId": 19 },
+      { "learnLevel": 5, "moveId": 30 },
+      { "learnLevel": 8, "moveId": 20 },
+      { "learnLevel": 14, "moveId": 23 },
+      { "learnLevel": 20, "moveId": 21 },
+      { "learnLevel": 25, "moveId": 24 },
+      { "learnLevel": 30, "moveId": 9 }
+    ],
+    "placeholderColor": "#987050",
+    "rarity": "rare"
+  },
+  {
+    "id": 24,
+    "name": "Blazehorn",
+    "types": ["fire", "ground"],
+    "baseStats": { "hp": 70, "atk": 75, "def": 65, "spAtk": 60, "spDef": 55, "speed": 55 },
+    "baseExpYield": 96,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 1 },
+      { "learnLevel": 1, "moveId": 19 },
+      { "learnLevel": 5, "moveId": 4 },
+      { "learnLevel": 9, "moveId": 20 },
+      { "learnLevel": 14, "moveId": 25 },
+      { "learnLevel": 20, "moveId": 21 },
+      { "learnLevel": 25, "moveId": 9 },
+      { "learnLevel": 30, "moveId": 22 }
+    ],
+    "placeholderColor": "#D04818",
+    "rarity": "rare"
+  },
+  {
+    "id": 25,
+    "name": "Aquaserpent",
+    "types": ["water", "ice"],
+    "baseStats": { "hp": 70, "atk": 55, "def": 60, "spAtk": 70, "spDef": 65, "speed": 50 },
+    "baseExpYield": 94,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 2 },
+      { "learnLevel": 1, "moveId": 10 },
+      { "learnLevel": 5, "moveId": 5 },
+      { "learnLevel": 9, "moveId": 12 },
+      { "learnLevel": 14, "moveId": 11 },
+      { "learnLevel": 20, "moveId": 26 },
+      { "learnLevel": 25, "moveId": 9 },
+      { "learnLevel": 30, "moveId": 8 }
+    ],
+    "placeholderColor": "#3878C0",
+    "rarity": "rare"
+  },
+  {
+    "id": 26,
+    "name": "Thundermane",
+    "types": ["electric", "fighting"],
+    "baseStats": { "hp": 65, "atk": 70, "def": 55, "spAtk": 70, "spDef": 55, "speed": 65 },
+    "baseExpYield": 96,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 13 },
+      { "learnLevel": 1, "moveId": 22 },
+      { "learnLevel": 5, "moveId": 29 },
+      { "learnLevel": 9, "moveId": 24 },
+      { "learnLevel": 14, "moveId": 14 },
+      { "learnLevel": 20, "moveId": 15 },
+      { "learnLevel": 25, "moveId": 23 },
+      { "learnLevel": 30, "moveId": 9 }
+    ],
+    "placeholderColor": "#C8A010",
+    "rarity": "rare"
+  },
+  {
+    "id": 27,
+    "name": "Nightcrawl",
+    "types": ["poison", "ground"],
+    "baseStats": { "hp": 55, "atk": 50, "def": 55, "spAtk": 50, "spDef": 55, "speed": 45 },
+    "baseExpYield": 72,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 16 },
+      { "learnLevel": 1, "moveId": 19 },
+      { "learnLevel": 5, "moveId": 17 },
+      { "learnLevel": 8, "moveId": 21 },
+      { "learnLevel": 14, "moveId": 18 },
+      { "learnLevel": 20, "moveId": 20 },
+      { "learnLevel": 25, "moveId": 8 },
+      { "learnLevel": 30, "moveId": 9 }
+    ],
+    "placeholderColor": "#604080",
+    "rarity": "uncommon"
+  },
+  {
+    "id": 28,
+    "name": "Duskraven",
+    "types": ["normal", "ice"],
+    "baseStats": { "hp": 50, "atk": 50, "def": 45, "spAtk": 55, "spDef": 50, "speed": 60 },
+    "baseExpYield": 72,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 1, "moveId": 10 },
+      { "learnLevel": 5, "moveId": 11 },
+      { "learnLevel": 8, "moveId": 8 },
+      { "learnLevel": 14, "moveId": 9 },
+      { "learnLevel": 20, "moveId": 12 },
+      { "learnLevel": 25, "moveId": 2 },
+      { "learnLevel": 30, "moveId": 13 }
+    ],
+    "placeholderColor": "#506080",
+    "rarity": "uncommon"
+  },
+  {
+    "id": 29,
+    "name": "Crystallix",
+    "types": ["ice", "ground"],
+    "baseStats": { "hp": 70, "atk": 65, "def": 70, "spAtk": 55, "spDef": 60, "speed": 50 },
+    "baseExpYield": 94,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 10 },
+      { "learnLevel": 1, "moveId": 19 },
+      { "learnLevel": 5, "moveId": 11 },
+      { "learnLevel": 9, "moveId": 20 },
+      { "learnLevel": 14, "moveId": 21 },
+      { "learnLevel": 20, "moveId": 12 },
+      { "learnLevel": 25, "moveId": 9 },
+      { "learnLevel": 30, "moveId": 22 }
+    ],
+    "placeholderColor": "#60B0C0",
+    "rarity": "rare"
+  },
+  {
+    "id": 30,
+    "name": "Spiritfang",
+    "types": ["normal", "fighting"],
+    "baseStats": { "hp": 75, "atk": 80, "def": 65, "spAtk": 60, "spDef": 65, "speed": 75 },
+    "baseExpYield": 114,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 8 },
+      { "learnLevel": 1, "moveId": 22 },
+      { "learnLevel": 5, "moveId": 9 },
+      { "learnLevel": 10, "moveId": 24 },
+      { "learnLevel": 16, "moveId": 30 },
+      { "learnLevel": 20, "moveId": 23 },
+      { "learnLevel": 25, "moveId": 10 },
+      { "learnLevel": 30, "moveId": 19 }
+    ],
+    "placeholderColor": "#D8D8F0",
+    "rarity": "legendary"
+  },
+  {
+    "id": 31, "name": "Magmite", "types": ["fire"],
+    "baseStats": { "hp": 45, "atk": 55, "def": 40, "spAtk": 60, "spDef": 45, "speed": 50 },
+    "baseExpYield": 64, "evolvesTo": { "speciesId": 32, "level": 16 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 1 }, { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 6, "moveId": 25 }, { "learnLevel": 10, "moveId": 8 },
+      { "learnLevel": 14, "moveId": 4 }, { "learnLevel": 18, "moveId": 19 }
+    ],
+    "placeholderColor": "#FF6600", "rarity": "common"
+  },
+  {
+    "id": 32, "name": "Lavantis", "types": ["fire", "ground"],
+    "baseStats": { "hp": 60, "atk": 65, "def": 55, "spAtk": 70, "spDef": 55, "speed": 55 },
+    "baseExpYield": 82, "evolvesTo": { "speciesId": 33, "level": 32 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 1 }, { "learnLevel": 1, "moveId": 19 },
+      { "learnLevel": 8, "moveId": 4 }, { "learnLevel": 12, "moveId": 21 },
+      { "learnLevel": 18, "moveId": 20 }, { "learnLevel": 24, "moveId": 9 },
+      { "learnLevel": 30, "moveId": 31 }
+    ],
+    "placeholderColor": "#CC4400", "rarity": "uncommon"
+  },
+  {
+    "id": 33, "name": "Volcanoth", "types": ["fire", "dragon"],
+    "baseStats": { "hp": 80, "atk": 85, "def": 70, "spAtk": 90, "spDef": 70, "speed": 65 },
+    "baseExpYield": 120,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 1 }, { "learnLevel": 1, "moveId": 31 },
+      { "learnLevel": 8, "moveId": 4 }, { "learnLevel": 14, "moveId": 20 },
+      { "learnLevel": 22, "moveId": 33 }, { "learnLevel": 28, "moveId": 34 },
+      { "learnLevel": 35, "moveId": 35 }
+    ],
+    "placeholderColor": "#AA2200", "rarity": "rare"
+  },
+  {
+    "id": 34, "name": "Murkling", "types": ["poison"],
+    "baseStats": { "hp": 50, "atk": 40, "def": 45, "spAtk": 55, "spDef": 50, "speed": 40 },
+    "baseExpYield": 62, "evolvesTo": { "speciesId": 35, "level": 16 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 16 }, { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 5, "moveId": 17 }, { "learnLevel": 9, "moveId": 2 },
+      { "learnLevel": 14, "moveId": 8 }, { "learnLevel": 18, "moveId": 18 }
+    ],
+    "placeholderColor": "#6B2D8B", "rarity": "common"
+  },
+  {
+    "id": 35, "name": "Bogtooth", "types": ["poison", "water"],
+    "baseStats": { "hp": 65, "atk": 60, "def": 60, "spAtk": 65, "spDef": 55, "speed": 45 },
+    "baseExpYield": 84, "evolvesTo": { "speciesId": 36, "level": 30 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 16 }, { "learnLevel": 1, "moveId": 2 },
+      { "learnLevel": 8, "moveId": 17 }, { "learnLevel": 14, "moveId": 5 },
+      { "learnLevel": 20, "moveId": 18 }, { "learnLevel": 26, "moveId": 26 },
+      { "learnLevel": 30, "moveId": 9 }
+    ],
+    "placeholderColor": "#4B3D6B", "rarity": "uncommon"
+  },
+  {
+    "id": 36, "name": "Miasmagator", "types": ["poison", "water"],
+    "baseStats": { "hp": 85, "atk": 80, "def": 75, "spAtk": 80, "spDef": 65, "speed": 50 },
+    "baseExpYield": 118,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 16 }, { "learnLevel": 1, "moveId": 2 },
+      { "learnLevel": 10, "moveId": 17 }, { "learnLevel": 16, "moveId": 5 },
+      { "learnLevel": 22, "moveId": 18 }, { "learnLevel": 28, "moveId": 26 },
+      { "learnLevel": 32, "moveId": 36 }, { "learnLevel": 38, "moveId": 37 }
+    ],
+    "placeholderColor": "#3A1D5B", "rarity": "rare"
+  },
+  {
+    "id": 37, "name": "Craglet", "types": ["fighting"],
+    "baseStats": { "hp": 50, "atk": 60, "def": 55, "spAtk": 35, "spDef": 45, "speed": 45 },
+    "baseExpYield": 64, "evolvesTo": { "speciesId": 38, "level": 18 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 22 }, { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 6, "moveId": 30 }, { "learnLevel": 10, "moveId": 19 },
+      { "learnLevel": 14, "moveId": 8 }, { "learnLevel": 18, "moveId": 23 }
+    ],
+    "placeholderColor": "#A06030", "rarity": "common"
+  },
+  {
+    "id": 38, "name": "Boulderbrawl", "types": ["fighting", "ground"],
+    "baseStats": { "hp": 75, "atk": 85, "def": 70, "spAtk": 45, "spDef": 60, "speed": 55 },
+    "baseExpYield": 98,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 22 }, { "learnLevel": 1, "moveId": 19 },
+      { "learnLevel": 8, "moveId": 30 }, { "learnLevel": 14, "moveId": 21 },
+      { "learnLevel": 20, "moveId": 23 }, { "learnLevel": 26, "moveId": 20 },
+      { "learnLevel": 30, "moveId": 24 }, { "learnLevel": 35, "moveId": 38 }
+    ],
+    "placeholderColor": "#805020", "rarity": "uncommon"
+  },
+  {
+    "id": 39, "name": "Shellshine", "types": ["water"],
+    "baseStats": { "hp": 50, "atk": 40, "def": 60, "spAtk": 55, "spDef": 55, "speed": 40 },
+    "baseExpYield": 63, "evolvesTo": { "speciesId": 40, "level": 20 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 2 }, { "learnLevel": 1, "moveId": 3 },
+      { "learnLevel": 6, "moveId": 5 }, { "learnLevel": 10, "moveId": 8 },
+      { "learnLevel": 14, "moveId": 10 }, { "learnLevel": 18, "moveId": 9 }
+    ],
+    "placeholderColor": "#60C8E0", "rarity": "common"
+  },
+  {
+    "id": 40, "name": "Tidecaster", "types": ["water", "normal"],
+    "baseStats": { "hp": 70, "atk": 55, "def": 70, "spAtk": 75, "spDef": 70, "speed": 50 },
+    "baseExpYield": 96,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 2 }, { "learnLevel": 1, "moveId": 8 },
+      { "learnLevel": 8, "moveId": 5 }, { "learnLevel": 14, "moveId": 10 },
+      { "learnLevel": 20, "moveId": 26 }, { "learnLevel": 26, "moveId": 9 },
+      { "learnLevel": 30, "moveId": 39 }, { "learnLevel": 35, "moveId": 36 }
+    ],
+    "placeholderColor": "#3090B0", "rarity": "uncommon"
+  },
+  {
+    "id": 41, "name": "Drakeling", "types": ["dragon"],
+    "baseStats": { "hp": 55, "atk": 55, "def": 50, "spAtk": 55, "spDef": 50, "speed": 50 },
+    "baseExpYield": 72, "evolvesTo": { "speciesId": 42, "level": 30 },
+    "movepool": [
+      { "learnLevel": 1, "moveId": 3 }, { "learnLevel": 1, "moveId": 31 },
+      { "learnLevel": 8, "moveId": 8 }, { "learnLevel": 14, "moveId": 13 },
+      { "learnLevel": 20, "moveId": 33 }, { "learnLevel": 26, "moveId": 9 }
+    ],
+    "placeholderColor": "#7848C0", "rarity": "rare"
+  },
+  {
+    "id": 42, "name": "Stormwyrm", "types": ["dragon", "electric"],
+    "baseStats": { "hp": 80, "atk": 75, "def": 65, "spAtk": 90, "spDef": 70, "speed": 80 },
+    "baseExpYield": 122,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 31 }, { "learnLevel": 1, "moveId": 13 },
+      { "learnLevel": 8, "moveId": 33 }, { "learnLevel": 14, "moveId": 14 },
+      { "learnLevel": 22, "moveId": 15 }, { "learnLevel": 28, "moveId": 34 },
+      { "learnLevel": 32, "moveId": 35 }, { "learnLevel": 38, "moveId": 29 }
+    ],
+    "placeholderColor": "#5830A0", "rarity": "rare"
+  },
+  {
+    "id": 43, "name": "Ashphoenix", "types": ["fire", "normal"],
+    "baseStats": { "hp": 65, "atk": 60, "def": 55, "spAtk": 70, "spDef": 60, "speed": 70 },
+    "baseExpYield": 92,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 1 }, { "learnLevel": 1, "moveId": 8 },
+      { "learnLevel": 8, "moveId": 25 }, { "learnLevel": 14, "moveId": 4 },
+      { "learnLevel": 20, "moveId": 9 }, { "learnLevel": 26, "moveId": 41 },
+      { "learnLevel": 30, "moveId": 39 }
+    ],
+    "placeholderColor": "#FF8844", "rarity": "uncommon"
+  },
+  {
+    "id": 44, "name": "Venomwillow", "types": ["grass", "poison"],
+    "baseStats": { "hp": 70, "atk": 50, "def": 65, "spAtk": 70, "spDef": 65, "speed": 40 },
+    "baseExpYield": 88,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 6 }, { "learnLevel": 1, "moveId": 16 },
+      { "learnLevel": 8, "moveId": 27 }, { "learnLevel": 14, "moveId": 17 },
+      { "learnLevel": 20, "moveId": 7 }, { "learnLevel": 26, "moveId": 18 },
+      { "learnLevel": 30, "moveId": 28 }, { "learnLevel": 35, "moveId": 37 }
+    ],
+    "placeholderColor": "#407828", "rarity": "uncommon"
+  },
+  {
+    "id": 45, "name": "Peakram", "types": ["ground", "ice"],
+    "baseStats": { "hp": 70, "atk": 70, "def": 65, "spAtk": 50, "spDef": 60, "speed": 55 },
+    "baseExpYield": 90,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 19 }, { "learnLevel": 1, "moveId": 10 },
+      { "learnLevel": 8, "moveId": 21 }, { "learnLevel": 14, "moveId": 11 },
+      { "learnLevel": 20, "moveId": 9 }, { "learnLevel": 26, "moveId": 20 },
+      { "learnLevel": 30, "moveId": 12 }, { "learnLevel": 35, "moveId": 38 }
+    ],
+    "placeholderColor": "#88A0B8", "rarity": "uncommon"
+  },
+  {
+    "id": 46, "name": "Coralsprite", "types": ["water", "grass"],
+    "baseStats": { "hp": 60, "atk": 45, "def": 60, "spAtk": 65, "spDef": 65, "speed": 45 },
+    "baseExpYield": 82,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 2 }, { "learnLevel": 1, "moveId": 6 },
+      { "learnLevel": 8, "moveId": 27 }, { "learnLevel": 14, "moveId": 5 },
+      { "learnLevel": 20, "moveId": 7 }, { "learnLevel": 26, "moveId": 26 },
+      { "learnLevel": 30, "moveId": 28 }
+    ],
+    "placeholderColor": "#50B898", "rarity": "uncommon"
+  },
+  {
+    "id": 47, "name": "Crystalwing", "types": ["ice", "dragon"],
+    "baseStats": { "hp": 70, "atk": 65, "def": 60, "spAtk": 80, "spDef": 65, "speed": 70 },
+    "baseExpYield": 104,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 10 }, { "learnLevel": 1, "moveId": 31 },
+      { "learnLevel": 8, "moveId": 11 }, { "learnLevel": 14, "moveId": 33 },
+      { "learnLevel": 22, "moveId": 12 }, { "learnLevel": 28, "moveId": 34 },
+      { "learnLevel": 32, "moveId": 35 }
+    ],
+    "placeholderColor": "#88D0F0", "rarity": "rare"
+  },
+  {
+    "id": 48, "name": "Galebird", "types": ["normal", "fighting"],
+    "baseStats": { "hp": 60, "atk": 65, "def": 50, "spAtk": 55, "spDef": 50, "speed": 70 },
+    "baseExpYield": 84,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 8 }, { "learnLevel": 1, "moveId": 22 },
+      { "learnLevel": 8, "moveId": 9 }, { "learnLevel": 14, "moveId": 30 },
+      { "learnLevel": 20, "moveId": 23 }, { "learnLevel": 26, "moveId": 24 },
+      { "learnLevel": 30, "moveId": 39 }
+    ],
+    "placeholderColor": "#C0D0E0", "rarity": "uncommon"
+  },
+  {
+    "id": 49, "name": "Pyrotitan", "types": ["fire", "dragon"],
+    "baseStats": { "hp": 95, "atk": 90, "def": 80, "spAtk": 100, "spDef": 80, "speed": 75 },
+    "baseExpYield": 140,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 1 }, { "learnLevel": 1, "moveId": 31 },
+      { "learnLevel": 10, "moveId": 4 }, { "learnLevel": 18, "moveId": 33 },
+      { "learnLevel": 24, "moveId": 20 }, { "learnLevel": 30, "moveId": 34 },
+      { "learnLevel": 36, "moveId": 35 }, { "learnLevel": 40, "moveId": 40 }
+    ],
+    "placeholderColor": "#DD1100", "rarity": "legendary"
+  },
+  {
+    "id": 50, "name": "Abysskeeper", "types": ["water", "dragon"],
+    "baseStats": { "hp": 95, "atk": 80, "def": 85, "spAtk": 95, "spDef": 85, "speed": 70 },
+    "baseExpYield": 140,
+    "movepool": [
+      { "learnLevel": 1, "moveId": 2 }, { "learnLevel": 1, "moveId": 31 },
+      { "learnLevel": 10, "moveId": 5 }, { "learnLevel": 18, "moveId": 33 },
+      { "learnLevel": 24, "moveId": 26 }, { "learnLevel": 30, "moveId": 34 },
+      { "learnLevel": 36, "moveId": 35 }, { "learnLevel": 40, "moveId": 40 }
+    ],
+    "placeholderColor": "#1840A0", "rarity": "legendary"
+  }
+]

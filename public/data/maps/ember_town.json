@@ -1,0 +1,33 @@
+{
+  "id": "ember_town",
+  "name": "Ember Town",
+  "cols": 14,
+  "rows": 12,
+  "grid": [
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 8, 8, 8, 8, 0, 0, 0, 0, 8, 8, 8, 8, 1],
+    [1, 6, 6, 6, 6, 0, 9, 9, 0, 6, 6, 6, 6, 1],
+    [1, 6, 6, 6, 6, 0, 0, 0, 0, 6, 6, 6, 6, 1],
+    [1, 6, 6, 7, 6, 0, 11, 0, 0, 6, 7, 6, 6, 1],
+    [1, 0, 0, 3, 0, 0, 3, 3, 0, 0, 3, 0, 0, 1],
+    [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+    [1, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 9, 0, 5, 5, 3, 5, 5, 0, 9, 0, 0, 1],
+    [1, 0, 9, 0, 0, 0, 3, 0, 0, 0, 9, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  ],
+  "exits": [
+    { "col": 0, "row": 6, "targetMap": "volcanic_trail", "targetCol": 33, "targetRow": 12, "direction": "LEFT" },
+    { "col": 13, "row": 6, "targetMap": "mountain_pass", "targetCol": 1, "targetRow": 15, "direction": "RIGHT" },
+    { "col": 3, "row": 4, "targetMap": "ember_clinic", "targetCol": 4, "targetRow": 4, "direction": "UP" },
+    { "col": 10, "row": 4, "targetMap": "ember_shop", "targetCol": 3, "targetRow": 4, "direction": "UP" }
+  ],
+  "npcs": [
+    { "npcId": "ember_npc", "col": 7, "row": 8 }
+  ],
+  "encounterZone": null,
+  "playerSpawn": { "x": 7, "y": 6 },
+  "biomeType": "volcano",
+  "isSafeZone": true
+}

@@ -1,0 +1,24 @@
+{
+  "id": "lakeside_clinic",
+  "name": "Lakeside Clinic",
+  "cols": 8,
+  "rows": 6,
+  "grid": [
+    [1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 6, 6, 6, 6, 6, 6, 1],
+    [1, 6, 0, 0, 0, 0, 6, 1],
+    [1, 6, 0, 0, 0, 0, 6, 1],
+    [1, 6, 0, 0, 7, 0, 6, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1]
+  ],
+  "exits": [
+    { "col": 4, "row": 4, "targetMap": "lakeside_village", "targetCol": 3, "targetRow": 5, "direction": "DOWN" }
+  ],
+  "npcs": [
+    { "npcId": "lakeside_healer", "col": 3, "row": 2 }
+  ],
+  "encounterZone": null,
+  "playerSpawn": { "x": 4, "y": 3 },
+  "biomeType": "interior",
+  "isSafeZone": true
+}

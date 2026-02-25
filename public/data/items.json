@@ -1,0 +1,23 @@
+[
+  { "id": 1, "name": "Minor Salve", "description": "A basic herbal remedy. Restores 20 HP.", "category": "healing", "effect": { "type": "heal", "amount": 20 }, "price": 50 },
+  { "id": 2, "name": "Healing Potion", "description": "A standard potion. Restores 50 HP.", "category": "healing", "effect": { "type": "heal", "amount": 50 }, "price": 150 },
+  { "id": 3, "name": "Greater Potion", "description": "A potent brew. Restores 100 HP.", "category": "healing", "effect": { "type": "heal", "amount": 100 }, "price": 400 },
+  { "id": 4, "name": "Full Restore", "description": "Fully restores a spirit's HP.", "category": "healing", "effect": { "type": "fullHeal" }, "price": 1500 },
+  { "id": 5, "name": "Half Salve", "description": "Restores 25% of max HP.", "category": "healing", "effect": { "type": "healPercent", "percent": 25 }, "price": 100 },
+  { "id": 6, "name": "Revive Herb", "description": "Revives a fainted spirit with 25% HP.", "category": "healing", "effect": { "type": "healPercent", "percent": 25 }, "price": 500 },
+  { "id": 7, "name": "Energy Root", "description": "A bitter root. Restores 75 HP.", "category": "healing", "effect": { "type": "heal", "amount": 75 }, "price": 300 },
+  { "id": 8, "name": "Spirit Orb", "description": "A basic capture orb for wild spirits.", "category": "capture", "effect": { "type": "capture", "multiplier": 1.0 }, "price": 100 },
+  { "id": 9, "name": "Great Orb", "description": "An improved capture orb with better odds.", "category": "capture", "effect": { "type": "capture", "multiplier": 1.5 }, "price": 300 },
+  { "id": 10, "name": "Ultra Orb", "description": "A high-quality orb for tough spirits.", "category": "capture", "effect": { "type": "capture", "multiplier": 2.0 }, "price": 800 },
+  { "id": 11, "name": "Master Orb", "description": "The ultimate orb. Never fails.", "category": "capture", "effect": { "type": "capture", "multiplier": 255 }, "price": 0 },
+  { "id": 12, "name": "Steppe Map", "description": "A weathered map of the Wild Steppe.", "category": "keyItem", "effect": { "type": "keyItem" }, "price": 0 },
+  { "id": 13, "name": "Forest Token", "description": "A token of passage from Ranger Elara.", "category": "keyItem", "effect": { "type": "keyItem" }, "price": 0 },
+  { "id": 14, "name": "Desert Compass", "description": "Points the way through the Scorched Dunes.", "category": "keyItem", "effect": { "type": "keyItem" }, "price": 0 },
+  { "id": 15, "name": "Tundra Amulet", "description": "Protects against the bitter cold of Frostpeak.", "category": "keyItem", "effect": { "type": "keyItem" }, "price": 0 },
+  { "id": 16, "name": "Volcano Pass", "description": "A heat-resistant permit for the volcanic trail.", "category": "keyItem", "effect": { "type": "keyItem" }, "price": 0 },
+  { "id": 17, "name": "Swamp Lantern", "description": "Illuminates the murky swamp depths.", "category": "keyItem", "effect": { "type": "keyItem" }, "price": 0 },
+  { "id": 18, "name": "Climbing Gear", "description": "Equipment needed to scale the mountain pass.", "category": "keyItem", "effect": { "type": "keyItem" }, "price": 0 },
+  { "id": 19, "name": "Port Visa", "description": "Entry permit to Port Breeze.", "category": "keyItem", "effect": { "type": "keyItem" }, "price": 0 },
+  { "id": 20, "name": "Max Elixir", "description": "A potent elixir. Restores 200 HP.", "category": "healing", "effect": { "type": "heal", "amount": 200 }, "price": 800 },
+  { "id": 21, "name": "Dragon Orb", "description": "An ancient capture orb attuned to dragon spirits.", "category": "capture", "effect": { "type": "capture", "multiplier": 3.0 }, "price": 1500 }
+]

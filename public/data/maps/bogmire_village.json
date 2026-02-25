@@ -1,0 +1,33 @@
+{
+  "id": "bogmire_village",
+  "name": "Bogmire Village",
+  "cols": 14,
+  "rows": 12,
+  "grid": [
+    [1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1],
+    [1, 8, 8, 8, 8, 0, 0, 3, 0, 8, 8, 8, 8, 1],
+    [1, 6, 6, 6, 6, 0, 4, 3, 4, 6, 6, 6, 6, 1],
+    [1, 6, 6, 6, 6, 0, 0, 3, 0, 6, 6, 6, 6, 1],
+    [1, 6, 6, 7, 6, 0, 11, 3, 0, 6, 7, 6, 6, 1],
+    [1, 0, 0, 3, 0, 0, 3, 3, 0, 0, 3, 0, 0, 1],
+    [1, 0, 4, 3, 3, 3, 3, 3, 3, 3, 3, 4, 0, 3],
+    [1, 0, 4, 0, 0, 0, 3, 0, 0, 0, 0, 4, 0, 1],
+    [1, 0, 0, 0, 9, 0, 3, 0, 9, 0, 0, 0, 0, 1],
+    [1, 0, 4, 4, 0, 0, 3, 0, 0, 4, 4, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  ],
+  "exits": [
+    { "col": 7, "row": 0, "targetMap": "swamp_depths", "targetCol": 17, "targetRow": 23, "direction": "UP" },
+    { "col": 13, "row": 6, "targetMap": "coastal_road", "targetCol": 1, "targetRow": 12, "direction": "RIGHT" },
+    { "col": 3, "row": 4, "targetMap": "bogmire_clinic", "targetCol": 4, "targetRow": 4, "direction": "UP" },
+    { "col": 10, "row": 4, "targetMap": "bogmire_shop", "targetCol": 3, "targetRow": 4, "direction": "UP" }
+  ],
+  "npcs": [
+    { "npcId": "bogmire_npc", "col": 7, "row": 8 }
+  ],
+  "encounterZone": null,
+  "playerSpawn": { "x": 7, "y": 6 },
+  "biomeType": "swamp",
+  "isSafeZone": true
+}
